@@ -1,7 +1,9 @@
 # Texture-synthesis
 Implementation of the texture synthesis algorithm described in "Texture Synthesis by Non-parametric Sampling" by A.A. Efros and T.K. Leung.
 
-In addition to this implementation a slight variation of this method is used to de-noise an image with the same approach.
+In addition to this implementation a slight variation of this method. The difference between this version and the original is that the original needed to be provided an image with the texture, one that has no missing pixels, while this modification looks instead at the non-missing pixels from the image itself to fill in the missing pixels. This change also means that we can take a noisy image where no non-noisy version exists and fill in the noisy pixels.
+
+
 
 Method description:
 
