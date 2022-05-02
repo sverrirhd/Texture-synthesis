@@ -16,6 +16,7 @@ The above image demonstrates the tradeoff in quality and speed that is made with
 This method can be used to de-noise images in almost the same way as described above. Instead of filling in 'missing' data (i.e. black box in the center), the first step is to detect noisy pixels and then apply the pixel-replacement with the window around the noisy-pixel to match other windows in the image. 
 
 The pixel detection is done by convolving the image with the following filter:
+
 ![image](https://user-images.githubusercontent.com/35537164/166264724-1cfe50f4-5ac2-49b7-a195-4ae536521625.png)
 
 This gives non-zero values where individual pixels vary greatly in intensity from their neighbours. This method does not exclusively work with this kind of noise, but this noise is simple to detect and thus easy to demonstrate the effectiveness of the method.
